@@ -5,11 +5,11 @@
             "name": "Mia",
             "surname": "Price",
             "vaccine_status": 1,
-            "vaccine_type": [
+            "vaccine_types": [
                 "Moderna",
                 ""
             ],
-            "vaccine_date": [
+            "vaccine_dates": [
                 "20 January 2022",
                 ""
             ],
@@ -21,11 +21,11 @@
             "name": "Daniel",
             "surname": "Robinson",
             "vaccine_status": 1,
-            "vaccine_type": [
+            "vaccine_types": [
                 "Pfizer",
                 ""
             ],
-            "vaccine_date": [
+            "vaccine_dates": [
                 "15 January 2022",
                 ""
             ],
@@ -37,11 +37,11 @@
             "name": "Donald",
             "surname": "Lewis",
             "vaccine_status": 2,
-            "vaccine_type": [
+            "vaccine_types": [
                 "Sinovac",
                 "Pfizer"
             ],
-            "vaccine_date": [
+            "vaccine_dates": [
                 "9 December 2021",
                 "3 March 2022"
             ],
@@ -53,11 +53,11 @@
             "name": "Nathan",
             "surname": "Simpson",
             "vaccine_status": 2,
-            "vaccine_type": [
+            "vaccine_types": [
                 "Moderna",
                 "Pfizer"
             ],
-            "vaccine_date": [
+            "vaccine_dates": [
                 "3 January 2022",
                 "24 April 2022"
             ],
@@ -69,11 +69,11 @@
             "name": "Thomas",
             "surname": "Mitchell",
             "vaccine_status": 2,
-            "vaccine_type": [
+            "vaccine_types": [
                 "Moderna",
                 "Moderna"
             ],
-            "vaccine_date": [
+            "vaccine_dates": [
                 "12 January 2022",
                 "1 April 2022"
             ],
@@ -85,11 +85,11 @@
             "name": "Nathan",
             "surname": "Jackson",
             "vaccine_status": 1,
-            "vaccine_type": [
+            "vaccine_types": [
                 "Sinovac",
                 ""
             ],
-            "vaccine_date": [
+            "vaccine_dates": [
                 "10 October 2021",
                 ""
             ],
