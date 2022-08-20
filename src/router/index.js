@@ -4,6 +4,7 @@ import GStore from '@/store'
 import PeopleLayout from '../views/event/PeopleLayout.vue'
 import PeopleDetail from '../views/event/PeopleDetail.vue'
 import VaccineDetail from '../views/event/VaccineDetail.vue'
+import NProgress from 'nprogress'
 import EventService from '@/services/EventService.js'
 
 const routes = [
@@ -54,7 +55,21 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
+})
+router.beforeEach(() => {
+  NProgress.start()
+})
+
+router.afterEach(() => {
+  NProgress.done()
 })
 
 export default router
