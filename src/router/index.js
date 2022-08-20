@@ -6,7 +6,7 @@ import PeopleDetail from '../views/event/PeopleDetail.vue'
 import VaccineDetail from '../views/event/VaccineDetail.vue'
 import NProgress from 'nprogress'
 import EventService from '@/services/EventService.js'
-
+import DoctorView from '../views/event/DoctorView.vue'
 const routes = [
   {
     path: '/',
@@ -48,6 +48,12 @@ const routes = [
         name: 'VaccineDetail',
         props: true,
         component: VaccineDetail
+      },
+      {
+        path: 'comment',
+        name: 'DoctorView',
+        props: true,
+        component: DoctorView
       }
     ]
   }
