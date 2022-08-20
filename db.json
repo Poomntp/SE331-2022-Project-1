@@ -1,0 +1,100 @@
+{
+    "people": [
+        {
+            "id": 1,
+            "name": "Mia",
+            "surname": "Price",
+            "vaccine_status": 1,
+            "vaccine_type": [
+                "Moderna",
+                ""
+            ],
+            "vaccine_date": [
+                "20 January 2022",
+                ""
+            ],
+            "age": "39 years old",
+            "hometown": "63 Grand St. Moncks Corner, SC 29461"
+        },
+        {
+            "id": 2,
+            "name": "Daniel",
+            "surname": "Robinson",
+            "vaccine_status": 1,
+            "vaccine_type": [
+                "Pfizer",
+                ""
+            ],
+            "vaccine_date": [
+                "15 January 2022",
+                ""
+            ],
+            "age": "23 years old",
+            "hometown": "51 Golden Star Dr. Huntington, NY 11743"
+        },
+        {
+            "id": 3,
+            "name": "Donald",
+            "surname": "Lewis",
+            "vaccine_status": 2,
+            "vaccine_type": [
+                "Sinovac",
+                "Pfizer"
+            ],
+            "vaccine_date": [
+                "9 December 2021",
+                "3 March 2022"
+            ],
+            "age": "29 years old",
+            "hometown": "52 Ryan Street. Sioux City, IA 51106"
+        },
+        {
+            "id": 4,
+            "name": "Nathan",
+            "surname": "Simpson",
+            "vaccine_status": 2,
+            "vaccine_type": [
+                "Moderna",
+                "Pfizer"
+            ],
+            "vaccine_date": [
+                "3 January 2022",
+                "24 April 2022"
+            ],
+            "age": "27 years old",
+            "hometown": "564 Argyle Road. Lithonia, GA 30038"
+        },
+        {
+            "id": 5,
+            "name": "Thomas",
+            "surname": "Mitchell",
+            "vaccine_status": 2,
+            "vaccine_type": [
+                "Moderna",
+                "Moderna"
+            ],
+            "vaccine_date": [
+                "12 January 2022",
+                "1 April 2022"
+            ],
+            "age": "33 years old",
+            "hometown": "9892 Clark St. Pittsburgh, PA 15206"
+        },
+        {
+            "id": 6,
+            "name": "Nathan",
+            "surname": "Jackson",
+            "vaccine_status": 1,
+            "vaccine_type": [
+                "Sinovac",
+                ""
+            ],
+            "vaccine_date": [
+                "10 October 2021",
+                ""
+            ],
+            "age": "23 years old",
+            "hometown": "546 Arnold Drive. Port Washington, NY 11050"
+        }
+    ]
+}
