@@ -1,12 +1,11 @@
 <template>
-  <div v-if="GStore.event">
-    <h1>{{ GStore.event.title }}</h1>
+  <div v-if="GStore.people">
     <div id="nav">
-      <router-link :to="{ name: '' }">Details</router-link>
+      <router-link :to="{ name: 'PeopleDetail' }">Details</router-link>
       |
-      <router-link :to="{ name: '' }">Register</router-link>
+      <router-link :to="{ name: 'VaccineDetail' }">Vaccines</router-link>
     </div>
-    <router-view :event="GStore.event" />
+    <router-view :people="GStore.people" />
   </div>
 </template>
 <script>

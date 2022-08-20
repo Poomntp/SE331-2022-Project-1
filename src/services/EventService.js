@@ -16,6 +16,6 @@ export default {
   },
   //Added new call
   getEvent(id) {
-    return apiClient.get('/peoples/' + id)
+    return apiClient.get('/' + id)
   }
 }

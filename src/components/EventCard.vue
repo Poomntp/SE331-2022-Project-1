@@ -1,10 +1,14 @@
 <template>
   <!-- <router-link class="event-link"> -->
-  <div class="event-card">
-    <h4>{{ people.name }} {{ people.surname }}</h4>
-    <span>number of doses : {{ people.vaccine_status }}</span>
-  </div>
-  <!-- </router-link> -->
+  <router-link
+    class="event-link"
+    :to="{ name: 'PeopleDetail', params: { id: people.id } }"
+  >
+    <div class="event-card">
+      <h4>{{ people.name }} {{ people.surname }}</h4>
+      <span>number of doses : {{ people.vaccine_status }}</span>
+    </div>
+  </router-link>
 </template>
 
 <script>
