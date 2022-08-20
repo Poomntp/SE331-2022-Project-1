@@ -14,7 +14,8 @@
                 ""
             ],
             "age": "39 years old",
-            "hometown": "63 Grand St. Moncks Corner, SC 29461"
+            "hometown": "63 Grand St. Moncks Corner, SC 29461",
+            "comment": "Mia Price is in very good health."
         },
         {
             "id": 2,
@@ -30,7 +31,8 @@
                 ""
             ],
             "age": "23 years old",
-            "hometown": "51 Golden Star Dr. Huntington, NY 11743"
+            "hometown": "51 Golden Star Dr. Huntington, NY 11743",
+            "comment": "Daniel Robinson has very bad health."
         },
         {
             "id": 3,
@@ -46,7 +48,8 @@
                 "3 March 2022"
             ],
             "age": "29 years old",
-            "hometown": "52 Ryan Street. Sioux City, IA 51106"
+            "hometown": "52 Ryan Street. Sioux City, IA 51106",
+            "comment": "Donald Lewis has very bad health."
         },
         {
             "id": 4,
@@ -62,7 +65,8 @@
                 "24 April 2022"
             ],
             "age": "27 years old",
-            "hometown": "564 Argyle Road. Lithonia, GA 30038"
+            "hometown": "564 Argyle Road. Lithonia, GA 30038",
+            "comment": "Nathan Simpson is in very good health."
         },
         {
             "id": 5,
@@ -78,7 +82,8 @@
                 "1 April 2022"
             ],
             "age": "33 years old",
-            "hometown": "9892 Clark St. Pittsburgh, PA 15206"
+            "hometown": "9892 Clark St. Pittsburgh, PA 15206",
+            "comment": "Thomas Mitchell is in very good health."
         },
         {
             "id": 6,
@@ -94,7 +99,8 @@
                 ""
             ],
             "age": "23 years old",
-            "hometown": "546 Arnold Drive. Port Washington, NY 11050"
+            "hometown": "546 Arnold Drive. Port Washington, NY 11050",
+            "comment": "Nathan Jackson has very bad health."
         }
     ]
 }
