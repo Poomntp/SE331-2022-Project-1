@@ -15,7 +15,8 @@
             ],
             "age": "39 years old",
             "hometown": "63 Grand St. Moncks Corner, SC 29461",
-            "comment": "Mia Price is in very good health."
+            "comment": "Mia Price is in very good health.",
+            "new_docter_comment":[]
         },
         {
             "id": 2,
