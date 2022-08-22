@@ -1,26 +1,28 @@
 <template>
-  <h1>Vaccine status</h1>
+  <div class="head_text">
+    <h1>Vaccine status</h1>
+  </div>
   <div class="events">
     <EventCard v-for="people in peoples" :key="people.id" :people="people" />
-    <div class="pagination">
-      <router-link
-        id="page-prev"
-        :to="{ name: 'PeopleList', query: { page: page - 1 } }"
-        rel="prev"
-        v-if="page != 1"
-      >
-        Prev Page</router-link
-      >
+  </div>
+  <div class="pagination">
+    <router-link
+      id="page-prev"
+      :to="{ name: 'PeopleList', query: { page: page - 1 } }"
+      rel="prev"
+      v-if="page != 1"
+    >
+      Prev Page</router-link
+    >
 
-      <router-link
-        id="page-next"
-        :to="{ name: 'PeopleList', query: { page: page + 1 } }"
-        rel="next"
-        v-if="hasNextPage"
-      >
-        Next Page</router-link
-      >
-    </div>
+    <router-link
+      id="page-next"
+      :to="{ name: 'PeopleList', query: { page: page + 1 } }"
+      rel="next"
+      v-if="hasNextPage"
+    >
+      Next Page</router-link
+    >
   </div>
 </template>
 
@@ -83,29 +85,49 @@ export default {
 }
 </script>
 <style scoped>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head_text h1 {
+  color: #ffff;
+  font-size: 10em;
+}
 .events {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .pagination {
-  display: flex;
-  width: 360px;
+  position: relative;
+  /* right: 0; */
+  width: 100%;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+  transition: 0.5s;
 }
 .pagination a {
-  flex: 1;
+  /* flex: 1; */
   text-decoration: none;
   color: #2c3e50;
 }
 
+.pagination:hover {
+  text-shadow: none;
+}
+
 #page-prev {
   color: white;
-  text-align: left;
+  position: absolute;
+  left: 15%;
 }
 
 #page-next {
   color: white;
-  text-align: right;
+  position: absolute;
+  right: 15%;
 }
 </style>

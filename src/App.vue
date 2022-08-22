@@ -46,7 +46,9 @@ body {
     rgba(45, 56, 138, 1) 1%,
     rgba(0, 174, 239, 1) 100%
   );
-  height: 100vh;
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav {
