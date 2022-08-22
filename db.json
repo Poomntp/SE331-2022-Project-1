@@ -33,7 +33,8 @@
             ],
             "age": "23 years old",
             "hometown": "51 Golden Star Dr. Huntington, NY 11743",
-            "comment": "Daniel Robinson has very bad health."
+            "comment": "Daniel Robinson has very bad health.",
+            "new_docter_comment":[]
         },
         {
             "id": 3,
@@ -50,7 +51,8 @@
             ],
             "age": "29 years old",
             "hometown": "52 Ryan Street. Sioux City, IA 51106",
-            "comment": "Donald Lewis has very bad health."
+            "comment": "Donald Lewis has very bad health.",
+            "new_docter_comment":[]
         },
         {
             "id": 4,
@@ -67,7 +69,8 @@
             ],
             "age": "27 years old",
             "hometown": "564 Argyle Road. Lithonia, GA 30038",
-            "comment": "Nathan Simpson is in very good health."
+            "comment": "Nathan Simpson is in very good health.",
+            "new_docter_comment":[]
         },
         {
             "id": 5,
@@ -84,7 +87,8 @@
             ],
             "age": "33 years old",
             "hometown": "9892 Clark St. Pittsburgh, PA 15206",
-            "comment": "Thomas Mitchell is in very good health."
+            "comment": "Thomas Mitchell is in very good health.",
+            "new_docter_comment":[]
         },
         {
             "id": 6,
@@ -101,7 +105,8 @@
             ],
             "age": "23 years old",
             "hometown": "546 Arnold Drive. Port Washington, NY 11050",
-            "comment": "Nathan Jackson has very bad health."
+            "comment": "Nathan Jackson has very bad health.",
+            "new_docter_comment":[]
         }
     ]
 }
