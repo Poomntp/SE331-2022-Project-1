@@ -5,6 +5,7 @@
     :to="{ name: 'PeopleDetail', params: { id: people.id } }"
   >
     <div class="event-card">
+      <img src="../assets/account.png" />
       <h4>{{ people.name }} {{ people.surname }}</h4>
       <span>number of doses : {{ people.vaccine_status }}</span>
     </div>
