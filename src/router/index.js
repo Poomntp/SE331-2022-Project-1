@@ -23,7 +23,11 @@ const routes = [
       return EventService.getEvent(to.params.id) // Return and params.id
         .then((response) => {
           // Still need to set the data here
-          GStore.people = response.data // <--- Store the event
+          GStore.people = response.data
+          GStore.people.new_docter_comment = GStore.reviews.filter((review) =>
+            GStore.people.name.equals(review.name)
+          )
+          console.log(GStore.people.new_docter_comment) // <--- Store the event
         })
         .catch((error) => {
           if (error.response && error.response.status == 404) {

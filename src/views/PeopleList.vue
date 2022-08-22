@@ -1,7 +1,14 @@
 <template>
   <h1>Vaccine status</h1>
   <div class="events">
-    <EventCard v-for="people in peoples" :key="people.id" :people="people" />
+    <div class="row">
+      <EventCard
+        class="col-3"
+        v-for="people in peoples"
+        :key="people.id"
+        :people="people"
+      />
+    </div>
     <div class="pagination">
       <router-link
         id="page-prev"
@@ -87,10 +94,16 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 10%;
+}
+
+.row {
+  float: right;
 }
 .pagination {
   display: flex;
-  width: 290px;
+  width: 700px;
+  padding-right: 100px;
 }
 .pagination a {
   flex: 1;
@@ -99,10 +112,12 @@ export default {
 }
 
 #page-prev {
+  color: white;
   text-align: left;
 }
 
 #page-next {
+  color: white;
   text-align: right;
 }
 </style>
