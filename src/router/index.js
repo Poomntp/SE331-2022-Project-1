@@ -24,10 +24,11 @@ const routes = [
         .then((response) => {
           // Still need to set the data here
           GStore.people = response.data
-          GStore.people.new_docter_comment = GStore.reviews.filter((review) =>
-            GStore.people.name.equals(review.name)
+          GStore.people.new_docter_comment = GStore.reviews.filter(
+            (review) => GStore.people.id == review.people_id
           )
-          console.log(GStore.people.new_docter_comment) // <--- Store the event
+          console.log(GStore.people.new_docter_comment)
+          console.log(GStore.people.id) // <--- Store the event
         })
         .catch((error) => {
           if (error.response && error.response.status == 404) {

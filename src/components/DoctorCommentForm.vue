@@ -11,10 +11,13 @@
 </template>
 
 <script>
+import GStore from '@/store'
 export default {
+  inject: ['GStore'],
   name: 'DoctorCommentForm',
   data() {
     return {
+      people_id: '',
       name: '',
       review: ''
     }
@@ -26,11 +29,12 @@ export default {
         return
       }
       let productReview = {
+        people_id: GStore.people.id,
         name: this.name,
         review: this.review
       }
       this.$emit('review-submitted', productReview)
-
+      this.people_id = ''
       this.name = ''
       this.review = ''
     }

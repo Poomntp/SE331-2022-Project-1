@@ -1,12 +1,16 @@
 <template>
   <DoctorCommentForm @review-submitted="addReview" />
-  <DoctorCommentView v-if="GStore.reviews" :reviews="GStore.reviews" />
+  <DoctorCommentView
+    v-if="GStore.reviews"
+    :reviews="GStore.people.new_docter_comment"
+  />
   <p>{{ people.comment }}</p>
 </template>
 
 <script>
 import DoctorCommentForm from '@/components/DoctorCommentForm.vue'
 import DoctorCommentView from '@/components/DoctorCommentView.vue'
+import GStore from '@/store'
 
 export default {
   props: ['people'],
@@ -14,6 +18,9 @@ export default {
   methods: {
     addReview(review) {
       this.GStore.reviews.push(review)
+      GStore.people.new_docter_comment = GStore.reviews.filter(
+        (review) => GStore.people.id == review.people_id
+      )
       this.GStore.flashMessage = ' Add review successfully '
       setTimeout(() => {
         // After 3 seconds remove it
