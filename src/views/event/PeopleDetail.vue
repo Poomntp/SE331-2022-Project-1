@@ -1,7 +1,20 @@
 <template>
-  <h4>{{ people.name }} {{ people.surname }}</h4>
-  <p>{{ people.age }}</p>
-  <p>{{ people.hometown }}</p>
+  <table id="details">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>{{ people.name }}</td>
+      <td>{{ people.surname }}</td>
+      <td>{{ people.age }}</td>
+      <td>{{ people.hometown }}</td>
+    </tr>
+  </table>
 </template>
 
 <script>
@@ -20,6 +33,33 @@ export default {
 </script>
 
 <style scoped>
+#details {
+  justify-content: center;
+}
+#details td,
+#details th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#details {
+  margin: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: black;
+}
+
+#details tr:nth-child(even) {
+  background-color: #ffffff;
+  color: black;
+}
+
+#details tr:nth-child(even):hover {
+  color: white;
+  background: black;
+}
+
 h4 {
   font-size: 40px;
   color: white;
