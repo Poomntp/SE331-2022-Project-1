@@ -2,7 +2,6 @@
   <h4>{{ people.name }} {{ people.surname }}</h4>
   <p>{{ people.age }}</p>
   <p>{{ people.hometown }}</p>
-  <button @click="edit">Edit Detail</button>
 </template>
 
 <script>
@@ -11,15 +10,6 @@ export default {
   inject: ['GStore'], // <---- Inject the Global Store
   methods: {
     edit() {
-      // Assuming successful API call to register them
-      this.GStore.flashMessage = ' Edit successfully '
-      setTimeout(() => {
-        // After 3 seconds remove it
-        this.GStore.flashMessage = ''
-      }, 5000)
-      // Set a flash message to appear on the next page loaded which says
-      // 'You are successfully registered for ' + this.event.title
-
       this.$router.push({
         name: 'PeopleDetail',
         params: { id: this.people.id }
@@ -28,3 +18,39 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+h4 {
+  font-size: 40px;
+  color: white;
+}
+button {
+  font-size: 1.7rem;
+  padding: 10px 30px;
+  background: none;
+  border: white solid 2px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+button::after {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  background: white;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.4s;
+}
+button:hover {
+  color: black;
+}
+button:hover::after {
+  width: 100%;
+}
+</style>

@@ -14,6 +14,11 @@ export default {
   methods: {
     addReview(review) {
       this.GStore.reviews.push(review)
+      this.GStore.flashMessage = ' Add review successfully '
+      setTimeout(() => {
+        // After 3 seconds remove it
+        this.GStore.flashMessage = ''
+      }, 5000)
     }
   },
   components: {
