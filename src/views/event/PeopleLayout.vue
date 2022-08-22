@@ -24,7 +24,7 @@ nav {
   position: relative;
   width: 310px;
   height: 50px;
-  background: #34495e;
+  background: #239cff;
   border-radius: 8px;
   font-size: 0;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@ nav .animation {
   height: 100%;
   top: 0;
   z-index: 0;
-  background: #1abc9c;
+  background: #002153;
   border-radius: 8px;
   transition: all 0.5s ease 0s;
 }

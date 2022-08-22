@@ -1,4 +1,5 @@
 <template>
+  <h2>Information</h2>
   <table id="details">
     <thead>
       <tr>
@@ -46,8 +47,8 @@ export default {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04aa6d;
-  color: black;
+  background-color: #002153;
+  color: white;
 }
 
 #details tr:nth-child(even) {
@@ -92,5 +93,8 @@ button:hover {
 }
 button:hover::after {
   width: 100%;
+}
+h2 {
+  color: black;
 }
 </style>
