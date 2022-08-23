@@ -4,7 +4,6 @@
     v-if="GStore.reviews"
     :reviews="GStore.people.new_docter_comment"
   />
-  <p>{{ people.comment }}</p>
 </template>
 
 <script>

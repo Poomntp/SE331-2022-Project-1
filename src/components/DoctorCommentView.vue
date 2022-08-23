@@ -5,8 +5,7 @@
       <div class="message">
         <span
           ><li v-for="(review, index) in reviews" :key="index">
-            {{ review.name }}
-            "{{ review.review }}"
+            {{ review.name }} : "{{ review.review }}"
           </li></span
         >
       </div>
