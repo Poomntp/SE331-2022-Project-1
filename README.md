@@ -1,24 +1,8 @@
 # se331-2022-project-1
 
-## Project setup
-```
-npm install
-```
+Group Name : LP
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Member : 632115016 Natcha Petchsrikul
+         632115027 Nitipoom Tinnasri
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Link Deploy : https://se331-2022-project-1-3a142.web.app/
